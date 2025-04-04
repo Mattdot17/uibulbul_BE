@@ -45,7 +45,7 @@ namespace uibulbul.Controllers
             return responseByType(_vehicleService.GetAllVehicles(), type);
         }
 
-        // GET: vehicles/Details/5
+        // GET: vehicles/details/5
         public string Details(int id)
         {
             Vehicle vehicle = new();

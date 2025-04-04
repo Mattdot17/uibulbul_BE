@@ -1,0 +1,24 @@
+﻿@using uibulbul.Services
+@model uibulbul.Models.Review
+@inject ReviewServices Service
+
+@{
+    ViewData["Title"] = "Reviews";
+}
+
+<h1>All Reviews</h1>
+
+
+<ul>
+    @{
+        foreach (var item in Service.GetAllReviews())
+        {
+            <li>
+                @item.Text
+            </li>
+            
+        }
+    }
+</ul>
+
+

@@ -22,8 +22,8 @@ namespace uibulbul.Controllers
                 return Ok(_services.GetAllReviews());
             }
             return View();
-            
-            }
+
+        }
 
         // GET: Review/Details/5
         public ActionResult Details(int id)
