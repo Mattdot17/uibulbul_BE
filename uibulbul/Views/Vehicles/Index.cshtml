@@ -1,0 +1,27 @@
+﻿@using uibulbul.Services
+@model uibulbul.Models.Vehicle
+@inject VehicleService Service
+@inject CacheServices<Vehicle> Cache
+
+@{
+    ViewData["Title"] = "Create Vehicle";
+}
+
+<h1>Create Vehicle</h1>
+
+
+<ul>
+    @{
+        foreach (var item in Service.GetPaginatedVehicles(1))
+        {
+            <li>
+                @item.Id -
+                @item.Model
+
+            </li>
+            
+        }
+    }
+</ul>
+
+
