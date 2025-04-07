@@ -271,3 +271,4 @@ C:\Users\tiade\Desktop\Iubulbul Backend\uibulbul\uibulbul\bin\Debug\net8.0\runti
 C:\Users\tiade\Desktop\Iubulbul Backend\uibulbul\uibulbul\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\tiade\Desktop\Iubulbul Backend\uibulbul\uibulbul\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\tiade\Desktop\Iubulbul Backend\uibulbul\uibulbul\obj\Debug\net8.0\uibulbul.sourcelink.json
+C:\Users\tiade\Desktop\Iubulbul Backend\uibulbul\uibulbul\bin\Debug\net8.0\AutoMapper.dll

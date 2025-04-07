@@ -8,6 +8,7 @@ using NuGet.Protocol;
 using uibulbul.Data;
 using uibulbul.Models;
 using uibulbul.Services;
+using AutoMapper;
 
 namespace uibulbul.Controllers
 {

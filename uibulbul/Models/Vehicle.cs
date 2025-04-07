@@ -6,9 +6,9 @@ namespace uibulbul.Models
     public class Vehicle
     {
         public int Id { get; set; }
-        public string Image { get; set; } = "";
-        public string Model { get; set; } = "";
-        public string FuelTypes { get; set; } = "";
+        public string Image { get; set; } = string.Empty;
+        public string Model { get; set; } = string.Empty;
+        public string FuelTypes { get; set; } = string.Empty;
         public int Capacity { get; set; }
         public float Price { get; set; }
         public bool Popular { get; set; }

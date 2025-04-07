@@ -12,7 +12,7 @@
 
 <ul>
     @{
-        foreach (var item in Service.GetPaginatedVehicles(1))
+        foreach (var item in Service.GetAllVehicles())
         {
             <li>
                 @item.Id -
