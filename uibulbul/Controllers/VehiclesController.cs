@@ -53,11 +53,11 @@ namespace uibulbul.Controllers
         }
 
         // GET: vehicles/Create
-        //public string Create()
-        //{
-        //    _vehicleService.AddSampleVehicles();
-        //    return _vehicleService.GetAllVehicles().ToJson();
-        //}
+        public string Create()
+        {
+           _vehicleService.AddSampleVehicles();
+           return _vehicleService.GetAllVehicles().ToJson();
+        }
 
 
 

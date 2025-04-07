@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiade\\Desktop\\Iubulbul Backend\\uibulbul\\uibulbul\\uibulbul.csproj": {}
+    "/Users/matteolecis/Desktop/C#/uibulbul_BE/uibulbul/uibulbul.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiade\\Desktop\\Iubulbul Backend\\uibulbul\\uibulbul\\uibulbul.csproj": {
+    "/Users/matteolecis/Desktop/C#/uibulbul_BE/uibulbul/uibulbul.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiade\\Desktop\\Iubulbul Backend\\uibulbul\\uibulbul\\uibulbul.csproj",
+        "projectUniqueName": "/Users/matteolecis/Desktop/C#/uibulbul_BE/uibulbul/uibulbul.csproj",
         "projectName": "uibulbul",
-        "projectPath": "C:\\Users\\tiade\\Desktop\\Iubulbul Backend\\uibulbul\\uibulbul\\uibulbul.csproj",
-        "packagesPath": "C:\\Users\\tiade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiade\\Desktop\\Iubulbul Backend\\uibulbul\\uibulbul\\obj\\",
+        "projectPath": "/Users/matteolecis/Desktop/C#/uibulbul_BE/uibulbul/uibulbul.csproj",
+        "packagesPath": "/Users/matteolecis/.nuget/packages/",
+        "outputPath": "/Users/matteolecis/Desktop/C#/uibulbul_BE/uibulbul/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\tiade\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/matteolecis/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +58,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.14, )"
+              "version": "[9.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
@@ -94,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
