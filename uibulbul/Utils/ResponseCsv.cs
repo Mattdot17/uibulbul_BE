@@ -13,26 +13,30 @@ namespace uibulbul.Utils
     {
         public IActionResult render<T>(List<T> values)
         {
-            string columns = "";
-            string rows = "";
+            string columns = string.Empty;
+            string rows = string.Empty;
+            int length = 30;
             var info = typeof(T).GetProperties();
             foreach (var prop in info)
             {
-                columns += prop.Name + "\t";
+                //int spaces = prop.Name.Length < length ? length - prop.Name.Length : 0;
+                columns += prop.Name.PadRight(length);
             }
 
             foreach (var item in values)
             {
-                var row = "";
+                var row = string.Empty;
                 foreach (var col in info)
                 {
-                    row += "\"" + col.GetValue(item) + "\"" + "\t" ;
+                    string itemName = col.GetValue(item).ToString() ?? string.Empty;
+                    //int spaces = itemName.Length < length ? length - itemName.Length : 0;
+                    row += itemName.PadRight(length);
                 }
-                rows += row.TrimEnd() + "\n";
+                rows += row + "\n";
             }
 
 
-            return Ok(columns.TrimEnd() + "\n" + rows);
+            return Ok(columns + "\n" + rows);
 
         }
     }

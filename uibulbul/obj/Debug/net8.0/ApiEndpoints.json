@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "ContainingType": "uibulbul.Controllers.VehiclesController",
+    "Method": "Index",
+    "RelativePath": "api/Vehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
