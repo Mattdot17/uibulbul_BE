@@ -21,13 +21,17 @@ builder.Services.AddScoped<VehicleService>();
 builder.Services.AddScoped<ReviewServices>();
 builder.Services.AddScoped<CurrencyServices>();
 builder.Services.AddSingleton(typeof(CacheServices<>));
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 else
 {
