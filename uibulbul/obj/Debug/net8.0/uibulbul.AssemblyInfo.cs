@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("uibulbul")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d34193678dd813cc007774b78fe37b3025887d1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9759614eb50b5a6f5456cf76e1e2b97375d3c015")]
 [assembly: System.Reflection.AssemblyProductAttribute("uibulbul")]
 [assembly: System.Reflection.AssemblyTitleAttribute("uibulbul")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
