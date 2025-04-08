@@ -8,26 +8,15 @@ using NuGet.Protocol;
 using uibulbul.Data;
 using uibulbul.Models;
 using uibulbul.Services;
+using AutoMapper;
+using uibulbul.DTO;
 
 namespace uibulbul.Controllers
 {
 
     public class VehiclesController : Controller
     {
-        public IActionResult responseByType(dynamic value, string type = "view")
-        {
-            Dictionary<string, Func<IActionResult>> response = new()
-            {
-                { "json" , () => Ok(value)},
-                { "view", () => View() },
-                { "csv", () =>  Ok("csv")}
-
-            };
-            bool exists = response.TryGetValue(type, out Func<IActionResult>? getResponse);
-            if (exists) return getResponse!();
-            return NotFound();
-
-        }
+        
 
         private readonly VehicleService _vehicleService;
         private readonly CacheServices<Vehicle> _cacheServices;
@@ -40,9 +29,9 @@ namespace uibulbul.Controllers
 
         // GET: vehicles
         
-        public IActionResult Index(string type) 
+        public IActionResult Index(string type = "view") 
         {
-            return responseByType(_vehicleService.GetAllVehicles(), type);
+            return new Utils.ViewUtils(type).response<VehicleDTO>(_vehicleService.GetAllVehicles());
         }
 
         // GET: vehicles/details/5

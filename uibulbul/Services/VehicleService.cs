@@ -1,7 +1,9 @@
 ﻿using System.Linq;
 using System.Security.AccessControl;
+using AutoMapper;
 using NuGet.Protocol;
-using uibulbul.Data; 
+using uibulbul.Data;
+using uibulbul.DTO;
 using uibulbul.Models; 
 
 namespace uibulbul.Services
@@ -10,26 +12,31 @@ namespace uibulbul.Services
     public class VehicleService
     {
         private readonly ApplicationDbContext _context;
+        private readonly IMapper _mapper;
 
-        public VehicleService(ApplicationDbContext context)
+        public VehicleService(ApplicationDbContext context, IMapper mapper)
         {
             _context = context;
+            this._mapper = mapper;
         }
 
-        private List<Vehicle> GetAllVehicles(int start = 0, int itemForPage = 5)
+        private VehicleDTO GetAllVehicles(int start = 0, int itemForPage = 5)
         {
             var list = _context.Vehicles.Skip(start * itemForPage).Take(itemForPage).ToList();
-            return list;
+            var data = _mapper.Map<VehicleDTO>(list);
+            return data;
         }
 
-        public List<Vehicle> GetAllVehicles()
+        public List<VehicleDTO> GetAllVehicles()
         {
-            return _context.Vehicles.ToList();
+            var data = _context.Vehicles.ToList();
+            var returnValue = _mapper.Map<List<VehicleDTO>>(data);
+            return returnValue;
         }
 
 
 
-        public List<Vehicle> GetPaginatedVehicles(int page = 0)
+        public VehicleDTO GetPaginatedVehicles(int page = 0)
         {
             var items = GetAllVehicles(page);
             return items;

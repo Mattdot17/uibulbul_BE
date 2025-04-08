@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiade\\Desktop\\Iubulbul Backend\\uibulbul\\uibulbul\\uibulbul.csproj": {}
+    "C:\\Users\\Riccardo\\Desktop\\uibulbulBackend\\uibulbul_BE\\uibulbul\\uibulbul.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiade\\Desktop\\Iubulbul Backend\\uibulbul\\uibulbul\\uibulbul.csproj": {
+    "C:\\Users\\Riccardo\\Desktop\\uibulbulBackend\\uibulbul_BE\\uibulbul\\uibulbul.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiade\\Desktop\\Iubulbul Backend\\uibulbul\\uibulbul\\uibulbul.csproj",
+        "projectUniqueName": "C:\\Users\\Riccardo\\Desktop\\uibulbulBackend\\uibulbul_BE\\uibulbul\\uibulbul.csproj",
         "projectName": "uibulbul",
-        "projectPath": "C:\\Users\\tiade\\Desktop\\Iubulbul Backend\\uibulbul\\uibulbul\\uibulbul.csproj",
-        "packagesPath": "C:\\Users\\tiade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiade\\Desktop\\Iubulbul Backend\\uibulbul\\uibulbul\\obj\\",
+        "projectPath": "C:\\Users\\Riccardo\\Desktop\\uibulbulBackend\\uibulbul_BE\\uibulbul\\uibulbul.csproj",
+        "packagesPath": "C:\\Users\\Riccardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Riccardo\\Desktop\\uibulbulBackend\\uibulbul_BE\\uibulbul\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Riccardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.14, )"
